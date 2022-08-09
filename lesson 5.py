@@ -49,4 +49,13 @@ while running:
 else:
     print('Завершено.')
 #9
-
+g=None
+print(type(g))
+if g is None:
+    print ('g is None')
+else:
+    print ('g is not None')
+#10
+a = [1, 2, 7, 9, 10, 12, 13, 21, 34, 55, 89]
+print(type(a))
+print([elem for elem in a if elem < 11])
