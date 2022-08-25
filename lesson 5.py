@@ -7,7 +7,7 @@ i = 5
 print(type(i))
 print('Значение составляет', i)
 #3
-name = 'Дима'
+name = 'Герда'
 print(type(name))
 print('Привет,', name)
 #4
