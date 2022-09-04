@@ -18,6 +18,6 @@ b = list(range(start, end+1))
 print('Наш интервал: ', b)
 for i in range(0, len(a)):
     if a[i] in b:
-        del a[i]
+        a.pop(i)
         a.append(0)
 print(a)
