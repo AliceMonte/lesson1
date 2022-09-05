@@ -17,7 +17,8 @@ end = int(input('Введите конец интервала от 1 до 20: ')
 b = list(range(start, end+1))
 print('Наш интервал: ', b)
 for i in range(0, len(a)):
-    if a[i] in b:
-        a.pop(i)
-        a.append(0)
+    for j in b:
+        if a[i] == j:
+            a.pop(i)
+            a.append(0)
 print(a)
