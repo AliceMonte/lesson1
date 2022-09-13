@@ -17,3 +17,14 @@ print(a)
 del a[2:len(a)]
 a = tuple(a)
 print(a)
+
+#1.3
+a = tuple(input('Введите любое слово: '))
+print(a)
+a = list(a)
+print(a)
+for i in range(len(a)):
+    if i > 1:
+        a.pop(i)
+a = tuple(a)
+print(a)
