@@ -21,31 +21,31 @@ print()
 n = int(input('Введите кол-во множеств: '))
 mn = list()
 k = 3
-import random
-for i in range(n+1):
-    a = set(random.randint(1, 15) for a in range(10))
-    mn.append(a)
-print(mn)
-for i in range(len(mn)):
-    print(i, mn[i])
+#import random
+#for i in range(n+1):
+ #   a = set(random.randint(1, 15) for a in range(10))
+  #  mn.append(a)
+#print(mn)
+#for i in range(len(mn)):
+ #   print(i, mn[i])
 
 #n = int(input('Введите кол-во множеств: '))
 #import random
 #for i in range(n):
     #i = set(random.randint(1, 15) for i in range(10))
     #print(i)
-#s = {}
-#import random
-#for i in range(1, n+1):
-    #i = set(random.randint(1, 15) for i in range(10))
-    #print(i)
-
-#for s in range(1, n+1):
-    #if s % k == 0:
-        #s = set(random.randint(1, 10) for s in range(10))
-       # print(s)
-#i.intersection_update(s)
-#print('i= ', i)
+s = {}
+import random
+for i in range(1, n+1):
+    if i % k == 0:
+        i = set(random.randint(1, 15) for i in range(10))
+        print(i)
+for s in range(1, n+1):
+    if s % k == 0:
+        s = set(random.randint(1, 10) for s in range(10))
+        print(s)
+i.intersection_update(s)
+print('i= ', i)
 
 
 
