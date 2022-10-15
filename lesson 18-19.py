@@ -28,19 +28,24 @@ for i in range(n):
     mn.append(a)
 print(mn)
 for i in range(n):
-    print(i, mn[i])
     if i % k == 0:
         ml.append(mn[i])
 print(ml)
-a = ml[0]
-b = ml[1]
-c = ml[2]
-d = ml[3]
-r = b.intersection(c)
-r2 = r.intersection(d)
-r3 = r2.difference(a)
-print(r)
-print(r2)
-print(r3)
+f = 2
+z = 1
+y = ml[1].intersection(ml[2])
+t = ml[0]
+for i in range(len(ml)):
+    while f < len(ml):
+        r = ml[z].intersection(ml[f])
+        z += 1
+        f += 1
+u = (r & y) - t
+if u != set():
+    print('Элементы,которые входят во множества,кратные 3 и не входят в первое:', u)
+else:
+    print('Совпадений нет')
+
+
 
 
