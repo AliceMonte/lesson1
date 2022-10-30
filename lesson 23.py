@@ -26,3 +26,18 @@ for i in range(b):
     list1.append(random(m, n))
 list1.sort()
 print(list1)
+
+#3
+b = int(input('Введите кол-во элементов: '))
+def random(mn,mx):
+    import random
+    global z
+    z = random.randint(mn, mx)
+list1 = []
+m = int(input('Введите начало диапазона: '))
+n = int(input('Введите конец диапазона: '))
+random(m,n)
+for i in range(b):
+    list1.append(z)
+list1.sort()
+print(list1)
