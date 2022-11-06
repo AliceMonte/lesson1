@@ -28,7 +28,7 @@ list1.sort()
 print(list1)
 
 #3
-b = int(input('Введите кол-во элементов: '))
+c = int(input('Введите кол-во элементов: '))
 def random(mn,mx):
     import random
     global z
@@ -37,7 +37,21 @@ list1 = []
 m = int(input('Введите начало диапазона: '))
 n = int(input('Введите конец диапазона: '))
 random(m,n)
-for i in range(b):
+for i in range(c):
     list1.append(z)
 list1.sort()
 print(list1)
+
+#4
+e = int(input('Введите кол-во элементов: '))
+def addtolist(min,max):
+    import random
+    global d
+    d = [0] * e
+    for i in range(len(d)):
+        d[i] = int(random.randint(min, max))
+    d.sort()
+m = int(input('Введите начало диапазона: '))
+n = int(input('Введите конец диапазона: '))
+addtolist(m,n)
+print(d)
